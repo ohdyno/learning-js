@@ -1,4 +1,4 @@
 const Fizzbuzz = require('../main/plain');
-const testFizzbuzz = require('../../test/contract.test');
+const Contract = require('../../test/contract.test');
 
-testFizzbuzz(Fizzbuzz);
+new Contract(Fizzbuzz).run();

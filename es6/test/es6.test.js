@@ -1,4 +1,4 @@
 import Fizzbuzz from '../main/es6'
-import testFizzbuzz from '../../test/contract.test';
+import Contract from '../../test/contract.test';
 
-testFizzbuzz(Fizzbuzz);
+new Contract(Fizzbuzz).run();
