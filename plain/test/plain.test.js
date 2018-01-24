@@ -1,4 +1,4 @@
-const Fizzbuzz = require('../main/plain-fizzbuzz');
-const testFizzbuzz = require('../../test/fizzbuzz.contact.test');
+const Fizzbuzz = require('../main/plain');
+const testFizzbuzz = require('../../test/contact.test');
 
 testFizzbuzz(Fizzbuzz);
