@@ -1,4 +1,4 @@
-function testFizzbuzz(Fizzbuzz) {
+module.exports = function (Fizzbuzz) {
     let subject;
 
     beforeEach(() => {
@@ -36,6 +36,4 @@ function testFizzbuzz(Fizzbuzz) {
             expect(logSpy.mock.calls[4][0]).toBe('buzz')
         });
     });
-}
-
-module.exports = testFizzbuzz;
+};
