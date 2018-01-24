@@ -6,26 +6,26 @@ beforeEach(() => {
     subject = new Fizzbuzz()
 });
 
-describe('fizzbuzz with single inputs', function () {
-    test('any number divisible by three', function () {
+describe('fizzbuzz with single inputs', () => {
+    test('any number divisible by three', () => {
         expect(subject.of(3)).toBe('fizz')
     });
 
-    test('any number divisible by five', function () {
+    test('any number divisible by five', () => {
         expect(subject.of(5)).toBe('buzz')
     });
 
-    test('any number divisible by five and divisible by three', function () {
+    test('any number divisible by five and divisible by three', () => {
         expect(subject.of(3 * 5)).toBe('fizzbuzz')
     });
 
-    test('any number NOT divisible by five or divisible by three', function () {
+    test('any number NOT divisible by five or divisible by three', () => {
         expect(subject.of(1)).toBe(1)
     });
 });
 
-describe('fizzbuzz with range inputs', function () {
-    test('it outputs the results from calling fizzbuzz on integers from 1 to n, inclusive', function () {
+describe('fizzbuzz with range inputs', () => {
+    test('it outputs the results from calling fizzbuzz on integers from 1 to n, inclusive', () => {
         const logSpy = jest.fn();
 
         subject.fromOneTo(5, logSpy);
