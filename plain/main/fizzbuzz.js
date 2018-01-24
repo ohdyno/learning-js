@@ -11,4 +11,13 @@ function fizzbuzz(number) {
     return number
 }
 
-module.exports = fizzbuzz;
+function fizzbuzzFromOneTo(number, output) {
+    for (var i = 1; i <= number; i++) {
+        output(fizzbuzz(i))
+    }
+}
+
+module.exports = {
+    fizzbuzz: fizzbuzz,
+    fizzbuzzFromOneTo: fizzbuzzFromOneTo
+};
