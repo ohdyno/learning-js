@@ -1,23 +1,23 @@
-function fizzbuzz(number) {
-    if (number % (3 * 5) === 0)
-        return 'fizzbuzz';
+const fizzbuzz = {
+    of: function (number) {
+        if (number % (3 * 5) === 0)
+            return 'fizzbuzz';
 
-    if (number % 3 === 0)
-        return 'fizz';
+        if (number % 3 === 0)
+            return 'fizz';
 
-    if (number % 5 === 0)
-        return 'buzz';
+        if (number % 5 === 0)
+            return 'buzz';
 
-    return number
-}
+        return number
+    },
 
-function fizzbuzzFromOneTo(number, output) {
-    for (var i = 1; i <= number; i++) {
-        output(fizzbuzz(i))
+    fromOneTo: function (number, output) {
+        for (var i = 1; i <= number; i++) {
+            output(this.of(i))
+        }
     }
-}
-
-module.exports = {
-    fizzbuzz: fizzbuzz,
-    fizzbuzzFromOneTo: fizzbuzzFromOneTo
 };
+
+
+module.exports = fizzbuzz;

@@ -1,21 +1,20 @@
-const fizzbuzz = require('../main/fizzbuzz').fizzbuzz;
-const fizzbuzzFromOneTo = require('../main/fizzbuzz').fizzbuzzFromOneTo;
+const fizzbuzz = require('../main/fizzbuzz');
 
 describe('fizzbuzz with single inputs', function () {
     test('any number divisible by three', function () {
-        expect(fizzbuzz(3)).toBe('fizz')
+        expect(fizzbuzz.of(3)).toBe('fizz')
     });
 
     test('any number divisible by five', function () {
-        expect(fizzbuzz(5)).toBe('buzz')
+        expect(fizzbuzz.of(5)).toBe('buzz')
     });
 
     test('any number divisible by five and divisible by three', function () {
-        expect(fizzbuzz(3 * 5)).toBe('fizzbuzz')
+        expect(fizzbuzz.of(3 * 5)).toBe('fizzbuzz')
     });
 
     test('any number NOT divisible by five or divisible by three', function () {
-        expect(fizzbuzz(1)).toBe(1)
+        expect(fizzbuzz.of(1)).toBe(1)
     });
 });
 
@@ -23,7 +22,7 @@ describe('fizzbuzz with range inputs', function () {
     test('it outputs the results from calling fizzbuzz on integers from 1 to n, inclusive', function () {
         const logSpy = jest.fn();
 
-        fizzbuzzFromOneTo(5, logSpy);
+        fizzbuzz.fromOneTo(5, logSpy);
 
         expect(logSpy.mock.calls[0][0]).toBe(1);
         expect(logSpy.mock.calls[1][0]).toBe(2);
