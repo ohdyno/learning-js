@@ -1,0 +1,8 @@
+{
+  "name": "js-frameworks",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}
