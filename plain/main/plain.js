@@ -1,4 +1,4 @@
-class Fizzbuzz {
+module.exports = class Fizzbuzz {
     of(number) {
         if (number % (3 * 5) === 0)
             return 'fizzbuzz';
@@ -17,6 +17,4 @@ class Fizzbuzz {
             output(this.of(i))
         }
     }
-}
-
-module.exports = Fizzbuzz;
+};
