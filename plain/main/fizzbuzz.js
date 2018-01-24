@@ -1,5 +1,5 @@
-const fizzbuzz = {
-    of: function (number) {
+class Fizzbuzz {
+    of(number) {
         if (number % (3 * 5) === 0)
             return 'fizzbuzz';
 
@@ -10,14 +10,13 @@ const fizzbuzz = {
             return 'buzz';
 
         return number
-    },
+    }
 
-    fromOneTo: function (number, output) {
-        for (var i = 1; i <= number; i++) {
+    fromOneTo(number, output) {
+        for (let i = 1; i <= number; i++) {
             output(this.of(i))
         }
     }
-};
+}
 
-
-module.exports = fizzbuzz;
+module.exports = Fizzbuzz;
