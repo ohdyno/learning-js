@@ -1,20 +1,20 @@
-function fizzbuzz(number) {
-    if (number % (3 * 5) === 0)
-        return 'fizzbuzz';
+export default class {
+    of(number) {
+        if (number % (3 * 5) === 0)
+            return 'fizzbuzz';
 
-    if (number % 3 === 0)
-        return 'fizz';
+        if (number % 3 === 0)
+            return 'fizz';
 
-    if (number % 5 === 0)
-        return 'buzz';
+        if (number % 5 === 0)
+            return 'buzz';
 
-    return number
-}
+        return number
+    }
 
-function fizzbuzzFromOneTo(number, output) {
-    for (let i = 1; i <= number; i++) {
-        output(fizzbuzz(i))
+    fromOneTo(number, output) {
+        for (let i = 1; i <= number; i++) {
+            output(this.of(i))
+        }
     }
 }
-
-export {fizzbuzz as of, fizzbuzzFromOneTo as fromOneTo}
