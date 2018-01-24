@@ -1,5 +1,5 @@
 {
-  "name": "js-frameworks",
+  "name": "plain-js",
   "version": "0.0.1",
   "devDependencies": {
     "jest": "^22.1.4"
