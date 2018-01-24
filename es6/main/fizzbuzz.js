@@ -1,23 +1,20 @@
-const fizzbuzz = {
-    of: function (number) {
-        if (number % (3 * 5) === 0)
-            return 'fizzbuzz';
+let fizzbuzz = function (number) {
+    if (number % (3 * 5) === 0)
+        return 'fizzbuzz';
 
-        if (number % 3 === 0)
-            return 'fizz';
+    if (number % 3 === 0)
+        return 'fizz';
 
-        if (number % 5 === 0)
-            return 'buzz';
+    if (number % 5 === 0)
+        return 'buzz';
 
-        return number
-    },
+    return number
+};
 
-    fromOneTo: function (number, output) {
-        for (var i = 1; i <= number; i++) {
-            output(this.of(i))
-        }
+let fizzbuzzFromOneTo = function (number, output) {
+    for (let i = 1; i <= number; i++) {
+        output(this.of(i))
     }
 };
 
-
-module.exports = fizzbuzz;
+export {fizzbuzz as of, fizzbuzzFromOneTo as fromOneTo}

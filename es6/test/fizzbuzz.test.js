@@ -1,4 +1,4 @@
-const fizzbuzz = require('../main/fizzbuzz');
+import * as fizzbuzz from '../main/fizzbuzz'
 
 describe('fizzbuzz with single inputs', function () {
     test('any number divisible by three', function () {
