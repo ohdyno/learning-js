@@ -1,4 +1,4 @@
-let fizzbuzz = function (number) {
+function fizzbuzz(number) {
     if (number % (3 * 5) === 0)
         return 'fizzbuzz';
 
@@ -9,12 +9,12 @@ let fizzbuzz = function (number) {
         return 'buzz';
 
     return number
-};
+}
 
-let fizzbuzzFromOneTo = function (number, output) {
+function fizzbuzzFromOneTo(number, output) {
     for (let i = 1; i <= number; i++) {
-        output(this.of(i))
+        output(fizzbuzz(i))
     }
-};
+}
 
 export {fizzbuzz as of, fizzbuzzFromOneTo as fromOneTo}
