@@ -4,14 +4,8 @@
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {
-    "babel-preset-env": "^1.6.1",
-    "vue": "^2.5.13",
-    "vue-template-compiler": "^2.5.13"
-  },
   "devDependencies": {
-    "babel-jest": "^22.1.0",
-    "jest": "^22.1.4",
-    "vue-jest": "^1.4.0"
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.1.4"
   }
 }
