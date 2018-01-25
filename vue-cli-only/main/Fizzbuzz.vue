@@ -5,14 +5,9 @@
 <script>
     const Fizzbuzz = require('../../plain/main/plain');
 
-    let fizzbuzz = new Fizzbuzz();
-
     export default {
         name: "fizzbuzz",
-        methods: {
-            of: fizzbuzz.of,
-            fromOneTo: fizzbuzz.fromOneTo
-        }
+        methods: Fizzbuzz()
     }
 </script>
 
